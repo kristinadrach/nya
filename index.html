@@ -7,13 +7,13 @@
     <style>
         /* Основные стили */
         body {
-            background: url("/static/images/f02c13559c818421c7fa2e650be50e47.jpg") no-repeat center fixed;
+            background: url("{{ url_for('static', filename='images/f02c13559c818421c7fa2e650be50e47.jpg') }}") no-repeat center fixed;
             background-size: cover;
             height: 100vh;
             margin: 0;
             overflow: hidden;
             font-family: 'Arial', sans-serif;
-            cursor: url('/static/cursors/2cursor.cur'), auto;
+            cursor: url("{{ url_for('static', filename='cursors/2cursor.cur') }}"), auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -145,7 +145,7 @@
     <div class="modal" id="imageModal">
         <div class="modal-content">
             <button class="close-button" id="closeModal">×</button>
-            <img src="/static/images/af3c050d1336df9b13ab1f52e2722558.jpg" alt="Nya~ Image">
+            <img src="{{ url_for('static', filename='images/af3c050d1336df9b13ab1f52e2722558.jpg') }}" alt="Nya~ Image">
         </div>
     </div>
 
